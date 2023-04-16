@@ -1,0 +1,26 @@
+.bg {
+    height: 100vh;
+    position: relative;
+    
+    
+}
+
+.bg::before {
+    background-image:url("images/weatherB.png");
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+}
+h1,h2,h3,form {   /* PUT ELEMENTS YOU WANT TO PUSH ABOVE BG-IMAGE */
+    isolation: isolate;
+}
+#weatherCard {
+    height: 600px;
+    width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
